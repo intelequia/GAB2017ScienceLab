@@ -172,6 +172,7 @@ Your lab deployment will continue working processing inputs until April 23rd 23:
 after that date. In order to delete your deployment:
 1. Select the Resource Group containing your science lab deployment
 2. Click on Delete and confirm by typing your resource group name
+3. Navigate to your Azure Active Directory and delete the App Registration for **GABLab2017**.
 
 Thanks for your support on Global Azure Bootcamp 2017 Science Lab. Live Long and Prosper!
 
