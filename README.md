@@ -34,7 +34,7 @@ be setup as Service Principal. To make this process easier, follow these steps:
 
 Requisites:
 * **Windows 10 is needed to run this step**. If you don't have Windows 10, ask a friend or your local event staff to help you on this one.
-* Install de latest version of Microsoft Azure PowerShell through the Web Platform Installer or downloading from [here](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids).
+* Install the latest version of Microsoft Azure PowerShell through the Web Platform Installer or downloading from [here](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids).
 
 
 1. Open a PowerShell console **as Administrator**
