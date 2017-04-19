@@ -14,9 +14,10 @@ Follow these steps to deploy the GAB Science Lab:
 
 In order to participate on the GAB Science Lab you will need:
 * An active Azure subscription. You will need to login as owner of the subscription to setup the needed credentials. You can signup for a free subscription [here](https://azure.microsoft.com/free/).
+* You must have sufficient permissions to register an application with your Azure AD tenant, and assign the application to a role in your Azure subscription. For more information, check this [link](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 * Available quota for the following resources:
- * 1 Batch Account for the deployment location (you can't have more than 1 batch account per location)
- * 1 core available (you will need to check the core quotas for the subscription and batch accounts)
+   * 1 Batch Account for the deployment location (you can't have more than 1 batch account per location)
+   * 1 core available (you will need to check the core quotas for the subscription and batch accounts)
 
 
 ## Installation process
