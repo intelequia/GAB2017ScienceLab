@@ -61,7 +61,7 @@ Requisites:
     * **ApplicationDisplayName**: The name of the Application (e.g. GABLab2017)
     * **SelfSignedPlainPassword**: A plain text password for the Self-signed Certificate. Ensure to use double quotes enclosing the password, and don't use an empty password or the script will fail
 ```PowerShell
-.\Setup-GABLabAccount.ps1 -SubscriptionId "d159cc75-d0ef-4d44-834f-9ed08567ac31" -ResourceGroupName "GABLab2017" -Location "North Europe" -ApplicationDisplayName "GABLab2017" -SelfSignedCertPlainPassword "abc"
+.\Setup-GABLabAccount.ps1 -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "GABLab2017" -Location "North Europe" -ApplicationDisplayName "GABLab2017" -SelfSignedCertPlainPassword "abc"
 ```
 4. A credential login prompt will be appear. You must login with your Azure credentials.
 
@@ -75,7 +75,17 @@ There are two ways to do this step.
 
 1. Click on the button: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/http%3A%2F%2Fglobalazurebootcamp.blob.core.windows.net%2Frelease%2Fassets%2FGABClient.json)
 2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
-	**IMPORTANT: you must select the existing subscription and Resource Group you specified on Step 2.**
+    * Choose the same subscription and resource group you specified on Step 2
+    * **Email, FullName, TeamName, CompanyName**: fill with your personal info. It be displayed on the global dashboards (e-mail will not)
+    * **CountryCode**: the 2 character ISO2 country code. Find your code at [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+    * **LabKeyCode**: Is a predefined string with your location LAB Key. Ask admin staff at your location for the code.    
+    * **VirtualMachinesSku**: Size of the virtual machines for the Azure Batch pool. We recommend select one of these (1 core Skus available for batch pools):
+        * Standard_A1        
+        * Standard_D1
+        * Standard_D1_v2
+        * Standard_F1
+    * **InstanceCount**: Number of virtual machine instances (20 or less). Check the available cores/quotas in your subscription before setting up a big number.
+    You can start with 1 or 2 virtual machines and change the number of them later on the portal.
 
 Now relax and wait for the green check. Will take around 10 minutes to complete.
 
@@ -85,7 +95,7 @@ Now relax and wait for the green check. Will take around 10 minutes to complete.
 
 1. Open GABClient.parameters.json with a text editor.
 2. Change the value of the parameters. Before do this, read the next notes:
-    * **Email, FullName, TeamName, CompanyName**: fill with your personal info. It be displayed on the global dashboards.
+    * **Email, FullName, TeamName, CompanyName**: fill with your personal info. It be displayed on the global dashboards (e-mail will not)
     * **CountryCode**: the 2 character ISO2 country code. Find your code at [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
     * **LabKeyCode**: Is a predefined string with your location LAB Key. Ask admin staff at your location for the code.    
     * **VirtualMachinesSku**: Size of the virtual machines for the Azure Batch pool. We recommend select one of these (1 core Skus available for batch pools):
@@ -93,7 +103,7 @@ Now relax and wait for the green check. Will take around 10 minutes to complete.
         * Standard_D1
         * Standard_D1_v2
         * Standard_F1
-    * **InstanceCount**: Number of virtual machine instances (100 or less). Check the available cores in your subscription before setting up a big number.
+    * **InstanceCount**: Number of virtual machine instances (20 or less). Check the available cores/quotas in your subscription before setting up a big number.
     You can start with 1 or 2 virtual machines and change the number of them later on the portal.
 3. Execute the Deploy-GABLabClient.ps1 script in a PowerShell. These parameters are required:
     * **ResourceGroupName**: use the **SAME resource group name** you used on step 2 when setting up the GAB Lab account
