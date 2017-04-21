@@ -60,7 +60,7 @@ Requisites:
         "UK South" 
         The lab will use an Azure Batch account provisioned on Step 3. Note that you can provision only ONE Azure Batch account per location
     * **ApplicationDisplayName**: The name of the Application (e.g. GABLab2017)
-    * **SelfSignedPlainPassword**: A plain text password for the Self-signed Certificate. Ensure to use double quotes enclosing the password, and don't use an empty password or the script will fail
+    * **SelfSignedCertPlainPassword**: A plain text password for the Self-signed Certificate. Ensure to use double quotes enclosing the password, and don't use an empty password or the script will fail
 ```PowerShell
 .\Setup-GABLabAccount.ps1 -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "GABLab2017" -Location "North Europe" -ApplicationDisplayName "GABLab2017" -SelfSignedCertPlainPassword "abc"
 ```
