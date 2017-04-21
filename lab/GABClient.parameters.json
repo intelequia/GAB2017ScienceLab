@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Email": {
+      "value": "johndoe@foo.com"
+    },
+    "FullName": {
+      "value": "John Doe"
+    },
+    "TeamName": {
+      "value": "Trekkies"
+    },
+    "CompanyName": {
+      "value": "My CompanyName"
+    },
+    "CountryCode": {
+      "value": "ES"
+    },
+    "LabKeyCode": {
+      "value": "XXX-YYY-ZZZ"
+    },
+	  "VirtualMachinesSku": {
+	    "value": "Standard_A1"
+	  },
+	  "InstanceCount": {
+	    "value": 2
+	  }
+  }
+}
