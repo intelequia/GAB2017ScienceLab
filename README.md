@@ -167,6 +167,12 @@ that normally takes some working days, so please, instead of filling MS support 
 * **Current task action:** Probably, your nodes are running a task, ensure that "Requeue" is selected. With this option, the data of the task will not be lost.
 * **Resize timeout:** You can use the default value.
 
+# Lab Architecture
+
+On the picture below you can check the global science lab architecture. The elements you have deployed are inside the "User deployment" box. 
+
+![Lab Architecture](https://globalazurebootcamp.blob.core.windows.net/images/GABLabArchitecture.png)
+
 # Decomissioning the Science Lab
 Your lab deployment will continue working processing inputs until April 23rd 23:59 or until you delete the deployment resources. Of course, you don't need to wait until that time, but the lab won't continue gathering inputs
 after that date. In order to delete your deployment:
