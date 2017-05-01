@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "hostingPlanName": {
+      "value": "batchserverapi-whp"
+    },
+    "webSiteName": {
+      "value": "batchserverapi"
+    },
+    "swagger.Enabled": {
+      "value": true
+    },
+    "sqlserverName": {
+      "value": "batchserverapi"
+    },
+    "administratorLogin": {
+      "value": "batchserveradmin"
+    },
+    "databaseName": {
+      "value": "BatchServer"
+    },
+    "storageName": {
+      "value": "batchserverapi"
+    },
+    "skuName": {
+      "value": "S1"
+    },
+    "skuCapacity": {
+      "value": 1  
+    },
+    "administratorLoginPassword": {
+      "value": "GlobalAB.2017$"
+    },
+    "edition": {
+      "value": "Standard"
+    },
+    "requestedServiceObjectiveName": {
+      "value": "S0"
+    },
+    "minInputId": { "value": 0 }
+  }
+}

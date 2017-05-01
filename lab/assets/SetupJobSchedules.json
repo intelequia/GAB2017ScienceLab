@@ -1,0 +1,50 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "jobName": {
+      "type": "string"
+    },    
+    "runbookName": {
+      "type": "string"
+    },        
+    "batchAccountName": {
+      "type": "string"
+    },    
+    "automationAccountName": {
+      "type": "string"
+    },
+    "runbookGetNewBatch": {
+      "type": "string"
+    }
+  },
+  "variables": {
+  },
+  "resources": [
+    {
+      "name": "[concat(parameters('AutomationAccountName'), '/', parameters('jobName'))]",
+      "type": "Microsoft.Automation/automationAccounts/jobs",
+      "apiVersion": "2015-10-31",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "displayName": "Job - Setup Job Schedules"
+      },
+      "dependsOn": [
+      ],
+      "properties": {
+        "runbook": {
+          "name": "[parameters('runbookName')]"
+        },
+        "parameters": {
+          "resourceGroupName": "[resourceGroup().name]",
+          "batchAccountName": "[parameters('BatchAccountName')]",
+          "automationAccountName": "[parameters('automationAccountName')]",
+          "runbookName": "[parameters('runbookGetNewBatch')]"
+        }
+      }
+    }
+  ],
+  "outputs": {
+  }
+}
+
