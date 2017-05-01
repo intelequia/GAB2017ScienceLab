@@ -23,7 +23,7 @@ In order to participate on the GAB Science Lab you will need:
 ## Installation process
 
 ### Step 1. Download the GAB Science lab scripts
-Download from [this location](https://globalazurebootcamp.blob.core.windows.net/release/GABLab.zip) the Science Lab scripts and unzip them in a local folder. You will see the following files:
+Download from [this location](https://github.com/intelequia/GAB2017ScienceLab/blob/master/lab/GABLab.zip?raw=true) the Science Lab scripts and unzip them in a local folder. You will see the following files:
 * Setup-GABLabAccount.ps1
 * Deploy-GABLabClient.ps1
 * GABClient.json
