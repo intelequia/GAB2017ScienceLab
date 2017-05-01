@@ -1,0 +1,8 @@
+/src/GABBatchServer/src/GAB.BatchServer.API/bin
+/src/GABBatchServer/src/GAB.BatchServer.Deploy/bin
+/src/GABBatchServer/src/GAB.BatchServer.LoadTest/bin
+/src/GABBatchServer/src/GAB.BatchServer.API/Properties/PublishProfiles/*.user
+/src/GABBatchServer/.vs
+/src/GABBatchServer/src/GAB.BatchServer.API/obj
+/src/GABBatchServer/src/GAB.BatchServer.Deploy/obj
+/src/GABBatchServer/src/GAB.BatchServer.LoadTest/obj
