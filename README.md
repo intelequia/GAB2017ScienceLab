@@ -1,4 +1,4 @@
-![RDS High Availability architecture](https://rdsdeploytest.blob.core.windows.net/images/arquitectura.png)
+![Global Azure Bootcamp 2017 - Science Lab](https://globalazurebootcamp.blob.core.windows.net/images/Pano-ORM-perfil-Lactea-DLopez-779x389.jpg)
 
 # Introduction
 This project contains all the source code for the Global Azure Bootcamp 2017 Science Lab. Created by David Rodriguez ([@davidjrh](http://twitter.com/davidjrh)), Adonai Suárez ([@adonaisg](http://twitter.com/adonaisg)), 
