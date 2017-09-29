@@ -1,4 +1,4 @@
-![Global Azure Bootcamp 2017 - Science Lab](https://globalazurebootcamp.blob.core.windows.net/images/Pano-ORM-perfil-Lactea-DLopez-779x389.jpg)
+![Global Azure Bootcamp 2017 - Science Lab](https://github.com/intelequia/GAB2017ScienceLab/raw/master/docs/Header-Title.jpg)
 
 # Introduction
 This project contains all the source code for the Global Azure Bootcamp 2017 Science Lab. Created by David Rodriguez ([@davidjrh](http://twitter.com/davidjrh)), Adonai Suárez ([@adonaisg](http://twitter.com/adonaisg)), 
